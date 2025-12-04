@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ashwini Yadav | Portfolio</title>
+
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&family=Orbitron:wght@700;800&display=swap" rel="stylesheet" />
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <!-- Animated Background Elements -->
+    <div class="aurora"></div>
+    <div class="stars" id="stars"></div>
+    <div class="floating-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="nav">
+        <div class="nav-inner">
+            <a href="#" class="logo">AY</a>
+            <ul class="nav-list">
+                <li><a href="#hero" class="nav-link active">Home</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#achievements" class="nav-link">Achievements</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li>
+                    <a href="https://www.linkedin.com/in/yourprofile" target="_blank" class="btn-connect">
+                        <i class="fab fa-linkedin-in"></i> Connect
+                    </a>
+                </li>
+            </ul>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <!-- Avatar with glow -->
+            <div class="avatar-container reveal-up">
+                <div class="avatar-glow"></div>
+                <div class="avatar">
+                    <img src="/placeholder.svg?height=120&width=120" alt="Ashwini Yadav" />
+                </div>
+            </div>
+
+            <!-- Status Badge -->
+            <div class="status-badge reveal-up" style="--delay: 0.1s">
+                <span class="status-dot"></span>
+                Available to connect
+            </div>
+
+            <!-- Name & Title -->
+            <h1 class="hero-name reveal-up" style="--delay: 0.2s">
+                Hey, I am <span class="name-highlight">Ashwini Yadav</span>
+            </h1>
+
+            <p class="hero-tagline reveal-up" style="--delay: 0.3s">
+                I am a passionate Computer Engineering student building futuristic digital experiences.
+            </p>
+
+            <!-- CTA Buttons -->
+            <div class="cta-buttons reveal-up" style="--delay: 0.4s">
+                <a href="#education" class="btn-primary">
+                    Explore my journey <i class="fas fa-arrow-down"></i>
+                </a>
+                <a href="#contact" class="btn-secondary">
+                    <i class="fas fa-hand-wave"></i> Let's connect
+                </a>
+            </div>
+        </div>
+
+        <!-- Floating Sparkles around hero -->
+        <div class="sparkle sparkle-1"><i class="fas fa-sparkles"></i></div>
+        <div class="sparkle sparkle-2"><i class="fas fa-star"></i></div>
+        <div class="sparkle sparkle-3"><i class="fas fa-sparkles"></i></div>
+        <div class="sparkle sparkle-4"><i class="fas fa-star"></i></div>
+    </section>
+
+    <!-- ===================== EDUCATION ===================== -->
+    <section class="section" id="education">
+        <div class="section-header reveal-up">
+            <span class="section-label">ACADEMIC JOURNEY</span>
+            <h2 class="section-title">Education</h2>
+            <p class="section-subtitle">Building a strong foundation in technology and innovation.</p>
+        </div>
+
+        <div class="cards-grid">
+            <div class="flip-card reveal-up" style="--delay: 0.1s">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <div class="card-icon"><i class="fas fa-school"></i></div>
+                        <h3>School</h3>
+                        <p>St. Teresa's Convent High School</p>
+                    </div>
+                    <div class="flip-card-back">
+                        <h4>Foundation Years</h4>
+                        <p>Built a strong academic foundation with a focus on science and mathematics.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card reveal-up" style="--delay: 0.2s">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <div class="card-icon"><i class="fas fa-graduation-cap"></i></div>
+                        <h3>Junior College</h3>
+                        <p>R.D. National College</p>
+                    </div>
+                    <div class="flip-card-back">
+                        <h4>Science Stream</h4>
+                        <p>Pursued PCM with focus on computer science fundamentals.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card reveal-up" style="--delay: 0.3s">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <div class="card-icon"><i class="fas fa-university"></i></div>
+                        <h3>Engineering</h3>
+                        <p>Fr. CRCE</p>
+                    </div>
+                    <div class="flip-card-back">
+                        <h4>Computer Engineering</h4>
+                        <p>Currently pursuing B.E. in Computer Engineering - First Year.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== ACHIEVEMENTS ===================== -->
+    <section class="section" id="achievements">
+        <div class="section-header reveal-up">
+            <span class="section-label">REAL-WORLD RESULTS</span>
+            <h2 class="section-title">Achievements</h2>
+            <p class="section-subtitle">Milestones that mark my journey in tech.</p>
+        </div>
+
+        <div class="achievement-cards">
+            <div class="achievement-card reveal-up" style="--delay: 0.1s">
+                <div class="achievement-badge">
+                    <i class="fas fa-trophy"></i>
+                </div>
+                <div class="achievement-content">
+                    <span class="achievement-label">COMPETITION - 2024</span>
+                    <h3>AI Art Competition</h3>
+                    <ul class="achievement-points">
+                        <li><i class="fas fa-check-circle"></i> 2nd Place at WIET</li>
+                        <li><i class="fas fa-check-circle"></i> Under Mumbai University</li>
+                        <li><i class="fas fa-check-circle"></i> Creative AI applications</li>
+                    </ul>
+                </div>
+                <div class="achievement-image">
+                    <img src="/placeholder.svg?height=200&width=300" alt="AI Art Competition" />
+                </div>
+            </div>
+
+            <div class="achievement-card reverse reveal-up" style="--delay: 0.2s">
+                <div class="achievement-badge">
+                    <i class="fas fa-code"></i>
+                </div>
+                <div class="achievement-content">
+                    <span class="achievement-label">HACKATHON - 2024</span>
+                    <h3>Bit N Build Hackathon</h3>
+                    <ul class="achievement-points">
+                        <li><i class="fas fa-check-circle"></i> Participated at CRCE</li>
+                        <li><i class="fas fa-check-circle"></i> Built innovative solutions</li>
+                        <li><i class="fas fa-check-circle"></i> Collaborative coding experience</li>
+                    </ul>
+                </div>
+                <div class="achievement-image">
+                    <img src="/placeholder.svg?height=200&width=300" alt="Hackathon" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== SKILLS ===================== -->
+    <section class="section" id="skills">
+        <div class="section-header reveal-up">
+            <span class="section-label">TECHNICAL EXPERTISE</span>
+            <h2 class="section-title">Skills</h2>
+            <p class="section-subtitle">Technologies I work with and am currently learning.</p>
+        </div>
+
+        <div class="skills-container reveal-up" style="--delay: 0.1s">
+            <div class="skill-card">
+                <div class="skill-icon"><i class="fab fa-cuttlefish"></i></div>
+                <span>C</span>
+                <div class="skill-glow"></div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                <span>HTML</span>
+                <div class="skill-glow"></div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+                <span>CSS</span>
+                <div class="skill-glow"></div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon"><i class="fab fa-js-square"></i></div>
+                <span>JavaScript</span>
+                <div class="skill-glow"></div>
+            </div>
+        </div>
+
+        <div class="learning-section reveal-up" style="--delay: 0.2s">
+            <h4>Currently Learning</h4>
+            <div class="learning-tags">
+                <span class="learning-tag"><i class="fab fa-python"></i> Python</span>
+                <span class="learning-tag"><i class="fab fa-react"></i> React</span>
+                <span class="learning-tag"><i class="fas fa-database"></i> SQL</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== GALLERY ===================== -->
+    <section class="section" id="gallery">
+        <div class="section-header reveal-up">
+            <span class="section-label">VISUAL SHOWCASE</span>
+            <h2 class="section-title">Gallery</h2>
+            <p class="section-subtitle">A glimpse into my creative work and projects.</p>
+        </div>
+
+        <div class="gallery-grid reveal-up" style="--delay: 0.1s">
+            <div class="gallery-item">
+                <img src="/placeholder.svg?height=250&width=350" alt="Project 1" />
+                <div class="gallery-overlay">
+                    <span>Project 1</span>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/placeholder.svg?height=250&width=350" alt="Project 2" />
+                <div class="gallery-overlay">
+                    <span>Project 2</span>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/placeholder.svg?height=250&width=350" alt="Project 3" />
+                <div class="gallery-overlay">
+                    <span>Project 3</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section class="section contact-section" id="contact">
+        <div class="contact-card reveal-up">
+            <div class="contact-glow"></div>
+            <h2>Let's Connect</h2>
+            <p>I am currently exploring the world of Computer Engineering. Feel free to reach out!</p>
+            
+            <div class="social-buttons">
+                <a href="https://www.linkedin.com/in/yourprofile" target="_blank" class="social-btn linkedin" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="mailto:your.email@example.com" class="social-btn email" aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://github.com/yourusername" target="_blank" class="social-btn github" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="site-footer">
+        <p>Made with <span class="heart">&#x1F499;</span> by Ashwini Yadav</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
