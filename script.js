@@ -1,29 +1,85 @@
 /* ===== PORTFOLIO ANIMATIONS & INTERACTIONS ===== */
 
 document.addEventListener("DOMContentLoaded", () => {
-  initStars()
+  initDeepSpaceBackground()
   initScrollReveal()
   initSmoothScroll()
   initNavActiveState()
   initMobileMenu()
+  initLetterHover()
 })
 
-/* ===== ANIMATED STARS BACKGROUND ===== */
-function initStars() {
-  const starsContainer = document.getElementById("stars")
-  if (!starsContainer) return
-
-  const starCount = window.innerWidth < 768 ? 30 : 60
-
-  for (let i = 0; i < starCount; i++) {
-    const star = document.createElement("div")
-    star.className = `star ${Math.random() > 0.8 ? "large" : ""}`
-    star.style.left = `${Math.random() * 100}%`
-    star.style.top = `${Math.random() * 100}%`
-    star.style.setProperty("--duration", `${2 + Math.random() * 4}s`)
-    star.style.animationDelay = `${Math.random() * 3}s`
-    starsContainer.appendChild(star)
+/* ===== DEEP SPACE BACKGROUND WITH NEBULA & STARS ===== */
+function initDeepSpaceBackground() {
+  // Create small stars
+  const starsSmall = document.getElementById("starsSmall")
+  if (starsSmall) {
+    for (let i = 0; i < 150; i++) {
+      const star = document.createElement("div")
+      star.className = "star star-small"
+      star.style.left = `${Math.random() * 100}%`
+      star.style.top = `${Math.random() * 100}%`
+      star.style.animationDelay = `${Math.random() * 4}s`
+      starsSmall.appendChild(star)
+    }
   }
+
+  // Create medium stars
+  const starsMedium = document.getElementById("starsMedium")
+  if (starsMedium) {
+    for (let i = 0; i < 80; i++) {
+      const star = document.createElement("div")
+      star.className = "star star-medium"
+      if (Math.random() > 0.7) star.classList.add("star-colored")
+      star.style.left = `${Math.random() * 100}%`
+      star.style.top = `${Math.random() * 100}%`
+      star.style.animationDelay = `${Math.random() * 3}s`
+      starsMedium.appendChild(star)
+    }
+  }
+
+  // Create large bright stars
+  const starsLarge = document.getElementById("starsLarge")
+  if (starsLarge) {
+    for (let i = 0; i < 30; i++) {
+      const star = document.createElement("div")
+      const colorClass = Math.random() > 0.6 ? (Math.random() > 0.5 ? "star-colored" : "star-purple") : ""
+      star.className = `star star-large ${colorClass}`
+      star.style.left = `${Math.random() * 100}%`
+      star.style.top = `${Math.random() * 100}%`
+      star.style.animationDelay = `${Math.random() * 2.5}s`
+      starsLarge.appendChild(star)
+    }
+  }
+
+  // Create floating dust particles
+  const dustContainer = document.getElementById("dustContainer")
+  if (dustContainer) {
+    for (let i = 0; i < 50; i++) {
+      const dust = document.createElement("div")
+      dust.className = "dust-particle"
+      dust.style.left = `${Math.random() * 100}%`
+      dust.style.top = `${100 + Math.random() * 20}%`
+      dust.style.animationDuration = `${15 + Math.random() * 20}s`
+      dust.style.animationDelay = `${Math.random() * 15}s`
+      dustContainer.appendChild(dust)
+    }
+  }
+}
+
+/* ===== LETTER HOVER EFFECT ===== */
+function initLetterHover() {
+  const letters = document.querySelectorAll(".letter")
+  letters.forEach((letter) => {
+    letter.addEventListener("mouseenter", () => {
+      letter.style.animation = "letterHover 0.3s forwards"
+    })
+    letter.addEventListener("animationend", (e) => {
+      if (e.animationName === "letterHover") {
+        letter.style.animation = ""
+      }
+    })
+  })
 }
 
 /* ===== SCROLL REVEAL ANIMATION ===== */
@@ -113,3 +169,5 @@ function initMobileMenu() {
     })
   }
 }
+
+
