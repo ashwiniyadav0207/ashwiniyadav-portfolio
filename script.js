@@ -171,3 +171,28 @@ function initMobileMenu() {
 }
 
 
+/* ==========================
+   🌗 LIGHT / DARK MODE
+   ========================== */
+
+document.addEventListener("DOMContentLoaded", () => {
+  const toggle = document.getElementById("themeToggle")
+  const icon = toggle.querySelector("i")
+
+  // Load saved preference
+  if (localStorage.getItem("theme") === "light") {
+    document.body.classList.add("light-mode")
+    icon.classList.remove("fa-sun")
+    icon.classList.add("fa-moon")
+  }
+
+  toggle.addEventListener("click", () => {
+    document.body.classList.toggle("light-mode")
+
+    const isLight = document.body.classList.contains("light-mode")
+    localStorage.setItem("theme", isLight ? "light" : "dark")
+
+    icon.classList.toggle("fa-sun")
+    icon.classList.toggle("fa-moon")
+  })
+})

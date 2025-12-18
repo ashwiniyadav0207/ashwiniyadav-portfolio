@@ -1496,3 +1496,106 @@ body {
     transform: translateY(-3px);
     box-shadow: 0 0 18px rgba(0, 234, 255, 0.35);
 }
+/* ==========================
+   🌞 Light Mode Theme
+   ========================== */
+
+.light-mode {
+  --bg-primary: #fffdf3;
+  --space-deep: #f7f3e8;
+  --text-primary: #1a1a1a;
+  --text-secondary: #4d4d4d;
+  --text-muted: #7a7a7a;
+
+  --glass-bg: rgba(255, 255, 255, 0.6);
+  --glass-border: rgba(200, 200, 200, 0.4);
+  --glass-bg-hover: rgba(240, 240, 240, 0.9);
+
+  --accent-cyan: #ffb703;
+  --accent-purple: #ff7d7d;
+  --accent-pink: #ff4081;
+}
+
+/* Toggle button styling */
+.theme-toggle {
+  cursor: pointer;
+  font-size: 1.4rem;
+  margin-left: 14px;
+  padding: 6px;
+  border-radius: 50%;
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  transition: all 0.3s ease;
+}
+
+.theme-toggle:hover {
+  background: var(--accent-cyan);
+  color: #000;
+  transform: scale(1.12);
+}
+
+/* Smooth theme transition */
+body, .nav, .section, .avatar-large img {
+  transition: background 0.4s ease, color 0.4s ease, border-color 0.4s ease;
+}
+
+
+/* ===============================
+   🌞 LIGHT MODE — PEACH BLOOM
+   =============================== */
+
+body.light-mode {
+  background: #fff6ec;
+  color: #1a1a1a;
+
+  --text-primary: #1a1a1a;
+  --text-secondary: #444;
+  --text-muted: #666;
+
+  --glass-bg: rgba(255, 255, 255, 0.85);
+  --glass-border: rgba(0, 0, 0, 0.12);
+  --glass-bg-hover: rgba(255, 235, 210, 0.9);
+
+  --accent-cyan: #ffb703;
+  --accent-purple: #ff8fab;
+  --accent-pink: #ffd166;
+}
+
+/* FORCE background change */
+body.light-mode .space-bg {
+  background: linear-gradient(
+    180deg,
+    #fff1d6 0%,
+    #ffe2b8 35%,
+    #fff7ea 70%,
+    #ffffff 100%
+  ) !important;
+}
+
+/* REMOVE galaxy effects in light mode */
+body.light-mode .nebula,
+body.light-mode .stars-layer,
+body.light-mode .dust-container,
+body.light-mode .shimmer-overlay {
+  display: none !important;
+}
+
+/* Cards & sections */
+body.light-mode .nav,
+body.light-mode .flip-card-front,
+body.light-mode .flip-card-back,
+body.light-mode .achievement-card,
+body.light-mode .skill-card,
+body.light-mode .gallery-item,
+body.light-mode .contact-form-box {
+  background: rgba(255, 255, 255, 0.9);
+  border-color: rgba(0, 0, 0, 0.12);
+}
+
+/* Hero text */
+body.light-mode .letter {
+  filter: none;
+  background: linear-gradient(135deg, #1a1a1a, #ffb703);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
