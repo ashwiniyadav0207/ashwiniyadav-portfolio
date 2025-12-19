@@ -1599,3 +1599,39 @@ body.light-mode .letter {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+/* =====================
+   GALLERY – MASONRY (NO GAPS, NO CROP)
+===================== */
+
+.gallery-grid {
+  column-count: 3;
+  column-gap: 24px;
+}
+
+@media (max-width: 900px) {
+  .gallery-grid {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery-grid {
+    column-count: 1;
+  }
+}
+
+.gallery-img {
+  width: 100%;
+  margin-bottom: 24px;
+  display: block;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.04);
+  padding: 10px;
+  cursor: pointer;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.gallery-img:hover {
+  transform: scale(1.04);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.45);
+}

@@ -351,138 +351,98 @@
     </section>
 
     <!-- ===================== GALLERY ===================== -->
-    <section class="section" id="gallery">
-        <div class="section-header reveal-up">
-            <span class="section-label">VISUAL SHOWCASE</span>
-            <h2 class="section-title">Gallery</h2>
-            <p class="section-subtitle">A glimpse into my creative work and projects.</p>
-        </div>
+   <!-- ===================== GALLERY ===================== -->
+<section class="section" id="gallery">
+  <div class="section-header reveal-up">
+    <span class="section-label">GALLERY</span>
+    <h2 class="section-title">Visual Moments</h2>
+    <p class="section-subtitle">A personal collection of my creative space.</p>
+  </div>
 
-        <div class="gallery-grid reveal-up" style="--delay: 0.1s">
-            <div class="gallery-item">
-                <img src="/placeholder.svg?height=250&width=350" alt="Project 1" />
-                <div class="gallery-overlay">
-                    <span>Project 1</span>
-                </div>
-            </div>
-            <div class="gallery-item">
-                <img src="/placeholder.svg?height=250&width=350" alt="Project 2" />
-                <div class="gallery-overlay">
-                    <span>Project 2</span>
-                </div>
-            </div>
-            <div class="gallery-item">
-                <img src="/placeholder.svg?height=250&width=350" alt="Project 3" />
-                <div class="gallery-overlay">
-                    <span>Project 3</span>
-                </div>
-            </div>
-        </div>
-    </section>
+  <div class="gallery-grid">
+    <img src="assets/cat1.jpeg" class="gallery-img" alt="">
+    <img src="assets/cat2.jpeg" class="gallery-img" alt="">
+    <img src="assets/cat3.jpeg" class="gallery-img" alt="">
+    <img src="assets/cat4.jpeg" class="gallery-img" alt="">
+    <img src="assets/cat5.jpeg" class="gallery-img" alt="">
+    <img src="assets/cat6.jpeg" class="gallery-img" alt="">
+  </div>
+</section>
 
-    <!-- ===================== CONTACT ===================== -->
-    <section class="section contact-section" id="contact">
-        <div class="section-header reveal-up">
-            <span class="section-label">GET IN TOUCH</span>
-            <h2 class="section-title">Let's Connect</h2>
-            <p class="section-subtitle">
-                I am currently exploring the world of Computer Engineering. Feel free to reach out!
-            </p>
-        </div>
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox">
+  <span class="lightbox-close">&times;</span>
+  <img id="lightboxImg">
+</div>
 
-        <div class="contact-wrapper">
-            <!-- Reach Me section -->
-            <div class="reach-me-section reveal-up" style="--delay: 0.1s">
-                <h3>Reach Me At</h3>
-                <div class="reach-icons">
-                    <a href="tel:+919967728615" class="reach-icon-btn" aria-label="Phone">
-                        <div class="icon-glow phone-glow"></div>
-                        <i class="fa-solid fa-phone"></i>
-                        <span class="reach-label">9967728615</span>
-                    </a>
-                    <a href="mailto:ashwiniyadav0207@gmail.com" class="reach-icon-btn" aria-label="Email">
-                        <div class="icon-glow email-glow"></div>
-                        <i class="fa-solid fa-envelope"></i>
-                        <span class="reach-label">Email</span>
-                    </a>
-                    <a href="https://www.linkedin.com/in/ashwini-yadav-796a4b386" target="_blank" class="reach-icon-btn" aria-label="LinkedIn">
-                        <div class="icon-glow linkedin-glow"></div>
-                        <i class="fa-brands fa-linkedin-in"></i>
-                        <span class="reach-label">LinkedIn</span>
-                    </a>
-                    <a href="https://www.instagram.com/findingashwini" target="_blank" class="reach-icon-btn" aria-label="Instagram">
-                        <div class="icon-glow instagram-glow"></div>
-                        <i class="fa-brands fa-instagram"></i>
-                        <span class="reach-label">Instagram</span>
-                    </a>
-                </div>
-            </div>
 
            
-           <!-- Contact Form -->
-<div class="contact-form-box reveal-up" style="--delay: 0.2s">
-  <h3>Send me a message ✨</h3>
+<!-- ===================== CONTACT ===================== -->
+<section class="section contact-section" id="contact">
+  <div class="section-header reveal-up">
+    <span class="section-label">GET IN TOUCH</span>
+    <h2 class="section-title">Let's Connect</h2>
+    <p class="section-subtitle">
+      Feel free to reach out for collaborations or a quick hello.
+    </p>
+  </div>
 
-  <form
-    action="https://formsubmit.co/ashwiniyadav0207@gmail.com"
-    method="POST"
-    class="contact-form"
-  >
-    <input type="hidden" name="_subject" value="New message from Portfolio!" />
-<input type="hidden" name="_captcha" value="false" />
-<input type="hidden" name="_template" value="box" />
+  <div class="contact-wrapper">
 
-<!-- 🔧 THIS IS THE LINE YOU FIX -->
-<input
-  type="hidden"
-  name="_next"
-  value="https://ashwiniyadav0207.github.io/ashwiniyadav-portfolio/thanks.html"
+    <!-- Contact Form -->
+    <div class="contact-form-box reveal-up" style="--delay: 0.2s">
+      <h3>Send me a message ✨</h3>
 
-<input type="text" name="_honey" style="display:none" />
+      <form
+        action="https://formsubmit.co/ashwiniyadav0207@gmail.com"
+        method="POST"
+        class="contact-form"
+      >
+        <!-- Required hidden fields -->
+        <input type="hidden" name="_subject" value="New message from Portfolio!" />
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="_template" value="box" />
+        <input
+          type="hidden"
+          name="_next"
+          value="https://ashwiniyadav0207.github.io/ashwiniyadav-portfolio/thanks.html"
+        />
 
+        <!-- Honeypot -->
+        <input type="text" name="_honey" style="display:none">
 
-    <!-- Honeypot (spam protection) -->
-    <input type="text" name="_honey" style="display:none">
+        <!-- Name -->
+        <div class="form-group">
+          <label>Your Name</label>
+          <input type="text" name="name" placeholder="Enter your name" required />
+        </div>
 
-    <!-- Name -->
-    <div class="form-group">
-      <label>Your Name</label>
-      <input
-        type="text"
-        name="name"
-        placeholder="Enter your name"
-        required
-      />
+        <!-- Email -->
+        <div class="form-group">
+          <label>Email Address</label>
+          <input type="email" name="email" placeholder="Enter your email" required />
+        </div>
+
+        <!-- Message -->
+        <div class="form-group">
+          <label>Your Message</label>
+          <textarea
+            name="message"
+            rows="5"
+            placeholder="Type your message here..."
+            required
+          ></textarea>
+        </div>
+
+        <button type="submit" class="form-submit-btn">
+          Send Message 🚀
+        </button>
+      </form>
     </div>
 
-    <!-- Email -->
-    <div class="form-group">
-      <label>Email Address</label>
-      <input
-        type="email"
-        name="email"
-        placeholder="Enter your email"
-        required
-      />
-    </div>
+  </div>
+</section>
 
-    <!-- Message -->
-    <div class="form-group">
-      <label>Your Message</label>
-      <textarea
-        name="message"
-        rows="5"
-        placeholder="Type your message here..."
-        required
-      ></textarea>
-    </div>
-
-    <!-- Submit -->
-    <button type="submit" class="form-submit-btn">
-      Send Message 🚀
-    </button>
-  </form>
-</div>
 
                 
 
